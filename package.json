@@ -1,0 +1,16 @@
+{
+  "name": "frontend-boilerplate-react-2019",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Yuji Suzuki <y0suzuki0123@gmail.com>",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel --no-hmr ./src/index.html",
+    "prebuild": "rm -rf dist",
+    "build": "cross-env NODE_ENV=production parcel build ./src/index.html",
+    "format": "prettier --write './src/**/*.{ts,tsx}'",
+    "lint": "run-p lint:*",
+    "lint:tslint": "tslint -p tsconfig.json",
+    "lint:typecheck": "tsc --noEmit"
+  }
+}

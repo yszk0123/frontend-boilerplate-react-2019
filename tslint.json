@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier",
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "class-name": false,
+    "interface-name": [true, "never-prefix"],
+    "no-empty-interface": false,
+    "object-literal-sort-keys": [true, "ignore-case"],
+    "prefer-for-of": false,
+    "prettier": true,
+    "variable-name": false,
+    // "variable-name": [
+    //   true,
+    //   "allow-leading-underscore",
+    //   // For React Component
+    //   "allow-pascal-case",
+    //   "ban-keywords",
+    //   "check-format"
+    // ],
+
+    // FIXME: Remove
+    // This rule conflicts with organize imports feature of vscode
+    "ordered-imports": false
+  }
+}
